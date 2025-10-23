@@ -29,33 +29,13 @@ The project follows a standard machine learning application workflow, from data 
 5.  **Frontend (JavaScript):** The vanilla JavaScript frontend handles all user interactions. It calls the Flask API to get recommendations and then makes further calls to the live TMDB API to enrich the results with posters, cast details, and other metadata before rendering the content on the page.
 6.  **Deployment (Render):** The entire Flask application, including the model files, is deployed as a web service on Render, using Gunicorn as the production server.
 
-## **5. Folder Structure**
-
-```text
-MOVIE_RECOM_PROJ/
-├── static/
-│   ├── script.js
-│   └── style.css
-├── templates/
-│   ├── index.html
-│   └── sentiment.html
-├── images/
-│   ├── recs_1.jpg
-│   └── recs_2.jpg
-├── venv/
-├── app.py
-├── movies_processed.pkl
-├── movie_vectors.pkl
-├── requirements.txt
-└── README.md
-```
-
-## **7. Future Enhancements**
+## **4. Future Enhancements**
 
 -   **Hybrid Recommendation System:** Integrate collaborative filtering (user ratings) with the current content-based model for more personalized suggestions.
 -   **Advanced Data Visualizations:** Add a dashboard to visualize data, such as word clouds of movie overviews or sentiment timelines for popular films.
 -   **User Accounts & Watchlists:** Implement user authentication to allow for saved watchlists, ratings, and viewing history.
 -   **Improved Search:** Integrate Elasticsearch to provide faster and more advanced fuzzy search capabilities.
+
 
 
 
